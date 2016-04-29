@@ -100,7 +100,7 @@ XKit.extensions.retags = {
 				if (XKit.storage.get('retags', cache, null) !== null) {
 					XKit.extensions.retags.append($t, cls, $c, XKit.storage.get('retags', cache));
 				} else {
-					XKit.extensions.retags.request($t,cls,$c,cache,'https://api.tumblr.com/v2/blog/'+host+'/posts/info?id='+id+'&api_key='+XKit.extensions.retags.api_key);
+					XKit.extensions.retags.request($t,cls,$c,cache,'https://api.tumblr.com/v2/blog/'+host+'/posts?id='+id+'&api_key='+XKit.extensions.retags.api_key);
 				}
 			}
 		});
